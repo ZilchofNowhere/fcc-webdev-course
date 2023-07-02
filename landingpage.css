@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
+}
+
+#header-img {
+    width: 300px;
+    height: 100%;
+    display: inline;
+}
+
+@media (max-width: 500px) {
+    #header-img {
+        width: 150px;
+        height: 100%;
+    }
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    padding: 15px;
+    background-color: #eee;
+}
+
+#header a {
+    color: black;
+    text-decoration: none;
+}
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+    align-items: center;
+    justify-content: end;
+    margin-right: 7%;
+}
+
+#submit {
+    background-color: #f4be0c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    font-weight: bold;
+    padding: 7px 12px;
+    border-radius: 2px;
+    transition-duration: 500ms;
+    display: block;
+    margin: 10px auto;
+}
+
+#submit:hover {
+    background-color: #ffa500;
+    cursor: pointer;
+}
+
+#down-header {
+    text-align: center;
+}
+
+#email {
+    width: 275px;
+    height: 25px;
+    padding-left: 5px;
+}
+
+#features {
+    text-align: left;
+    padding: 5px 10%;
+    margin-bottom: 30px;
+}
+
+#features h2 {
+    margin-bottom: 5px;
+}
+
+.feature {
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.feature i {
+    display: inline;
+    position: relative;
+    left: 0;
+    justify-content: left;
+}
+
+.feature .feat {
+    display: flex;
+    flex-direction: column;
+} 
+
+#how_it_works {
+    text-align: center;
+}
+
+main {
+    margin: auto 20%;
+    padding: 0;
+}
+
+.fa {
+    color: orange;
+}
+
+.fa-fire::before {
+    content: "\f06d";
+}
+
+.fa-truck::before {
+    content: "\f0d1";
+}
+
+.fa-battery-full::before {
+    content: "\f240";
+}
+
+footer {
+    background-color: #ddd;
+    margin: 0;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+}
+
+.foot-link {
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.foot-link:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.foot-info {
+    font-size: 14px;
+    color: #444;
+}
+
+#pricing {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.product {
+    border: 0.5px solid black;
+    font-size: 16px;
+    text-align: center;
+}
+
+.prod-title {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #ddd;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.price {
+    font-size: 24px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+button {
+    background-color: #f4be0c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 2px;
+    transition-duration: 500ms;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffa500;
+    cursor: pointer;
+}
