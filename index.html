@@ -13,6 +13,7 @@
              color: white;
              padding: 30px;
              padding-top: 15px;
+             font-family: sans-serif;
          }
 
          h1 {
@@ -41,6 +42,7 @@
              border-radius: 8px;
              background-color: #0a0a23;
              padding-right: 30px;
+             box-shadow: 0px 0px 3px 1.5px #000000bb;
          }
 
          .link {
@@ -49,6 +51,33 @@
 
          .link:last-child {
              padding-bottom: 20px;
+         }
+
+         #home {
+             border-radius: 4px;
+             border: 1px solid #0a0a23;
+             background-color: #0a0a23;
+             color: white;
+             transition-duration: 200ms;
+             font-family: sans-serif;
+             position: absolute;
+             top: 25px;
+             left: 50px;
+             padding-top: 14px;
+             padding-bottom: 14px;
+         }
+
+         #home:hover {
+             color: #0a0a23;
+             background-color: white;
+         }
+
+         footer {
+             position: absolute;
+             bottom: 0;
+             left: 0;
+             width: 100%;
+             text-align: center;
          }
 
         </style>
@@ -62,9 +91,9 @@
             </p>
         <![endif]-->
 
-        <h1>freeCodeCamp WebDev Projects</h1>
+        <button id="home">Home</button>
 
-        <!--TODO: add a home button-->
+        <h1>freeCodeCamp WebDev Projects</h1>
 
         <p id="desc">
             This is the page that includes links to the projects of the tutorial chapters
@@ -79,5 +108,22 @@
             <li class="link"><a href="./landingpage.html">Product landing page</a></li>
         </ul>
 
+        <footer>
+            <hr>
+            <p>
+                <sub>
+                    <i style="text-decoration: underline;">zilchofnowhere.github.io/fcc-webdev-course</i><sup style="font-size: 7pt;">TM</sup> is a personal site that hopes that it is simple enough to not be ripped off.
+                    <br>
+                    All rights reserved. © 2023
+                </sub>
+            </p>
+        </footer>
+
+        <script>
+         let btn = document.getElementById("home")
+         btn.onclick = () => {
+             window.open("/", "_self")
+         }
+        </script>
     </body>
 </html>
