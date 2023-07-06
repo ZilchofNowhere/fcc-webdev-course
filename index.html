@@ -22,7 +22,7 @@
          }
 
          #desc {
-             padding-top: 25px;
+             padding-top: 20px;
              padding-left: 15px;
          }
 
@@ -60,9 +60,6 @@
              color: white;
              transition-duration: 200ms;
              font-family: sans-serif;
-             position: absolute;
-             top: 25px;
-             left: 50px;
              padding-top: 14px;
              padding-bottom: 14px;
          }
@@ -72,14 +69,24 @@
              background-color: white;
          }
 
+         #header {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+             justify-content: space-around;
+             align-items: center;
+             width: 100%;
+             text-align: center;
+             padding-left: 25px;
+         }
+
          footer {
-             position: absolute;
+             position: fixed;
              bottom: 0;
              left: 0;
              width: 100%;
              text-align: center;
          }
-
         </style>
     </head>
     <body>
@@ -91,9 +98,10 @@
             </p>
         <![endif]-->
 
-        <button id="home">Home</button>
-
-        <h1>freeCodeCamp WebDev Projects</h1>
+        <div id="header">
+            <button id="home">Home</button>
+            <h1>freeCodeCamp WebDev Projects</h1>
+        </div>
 
         <p id="desc">
             This is the page that includes links to the projects of the tutorial chapters
